@@ -8,3 +8,6 @@ set visualbell
 :noremap <C-k> O<Esc>
 :noremap t <C-r>
 :noremap <leader>w <C-s>
+set clipboard=unnamed
+nmap <Leader>d diw
+nmap <Leader>c ciw
