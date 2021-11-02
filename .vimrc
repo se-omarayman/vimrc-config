@@ -12,7 +12,7 @@ set visualbell
 :noremap <leader>z :vsc Window.Close<CR>
 :noremap <leader>o :vsc View.Output<CR>
 :noremap <leader>t :vsc View.Terminal<CR>
-set clipboard=unnamed
+"  set clipboard=unnamed
 nmap <Leader>d diw
 nmap <Leader>c ciw
 nnoremap gj gT
