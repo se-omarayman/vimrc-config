@@ -13,7 +13,12 @@ noremap t <C-r>
 set clipboard=unnamed
 nmap <Leader>d diw
 nmap <Leader>c ciw
+nmap <Leader>y yiw
 "  nnoremap gj gT
 "  nnoremap gk gt
 nnoremap <leader>a ggVG
 nnoremap x "_x
+onoremap L $
+onoremap H ^
+onoremap ( i(
+vnoremap p pgvy
