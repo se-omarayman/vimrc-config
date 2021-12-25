@@ -2,15 +2,16 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 set visualbell
 inoremap jk <Esc>
-noremap gl $
-noremap gh ^
+noremap L $
+noremap H ^
 noremap <C-j> o<Esc>
 noremap <C-k> O<Esc>
+noremap <leader>j :vsc Window.NextDocumentWindow<CR>
+noremap <leader>k :vsc Window.PreviousDocumentWindow<CR>
 noremap t <C-r>
-"  noremap <leader>w <C-s>
-"  noremap <leader>t :vsc View.Terminal<CR>
-"  noremap <leader>t <C-t>
-set clipboard=unnamed
+noremap <leader>w :vsc File.SaveSelectedItems<CR>
+noremap <leader>t :vsc View.Terminal<CR>
+" set clipboard=unnamed
 nmap <Leader>d diw
 nmap <Leader>c ciw
 nmap <Leader>y yiw
@@ -21,4 +22,6 @@ nnoremap x "_x
 onoremap L $
 onoremap H ^
 onoremap ( i(
+onoremap " i"
+onoremap { i{
 vnoremap p pgvy
