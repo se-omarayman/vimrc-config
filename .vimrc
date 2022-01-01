@@ -6,11 +6,7 @@ noremap L $
 noremap H ^
 noremap <C-j> o<Esc>
 noremap <C-k> O<Esc>
-noremap <leader>j :vsc Window.NextDocumentWindow<CR>
-noremap <leader>k :vsc Window.PreviousDocumentWindow<CR>
 noremap t <C-r>
-noremap <leader>w :vsc File.SaveSelectedItems<CR>
-noremap <leader>t :vsc View.Terminal<CR>
 " set clipboard=unnamed
 nmap <Leader>d diw
 nmap <Leader>c ciw
@@ -25,3 +21,12 @@ onoremap ( i(
 onoremap " i"
 onoremap { i{
 vnoremap p pgvy
+
+noremap <leader>j :vsc Window.NextDocumentWindow<CR>
+noremap <leader>k :vsc Window.PreviousDocumentWindow<CR>
+noremap <leader>s :vsc View.SolutionExplorer<CR>
+noremap <leader>o :vsc View.Output<CR>
+noremap <C-w> :vsc Window.CloseDocumentWindow<CR>
+noremap gh :vsc Edit.QuickInfo<CR>
+noremap <leader>w :vsc File.SaveSelectedItems<CR>
+noremap <leader>t :vsc View.Terminal<CR>
