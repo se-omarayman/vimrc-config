@@ -4,8 +4,8 @@ set visualbell
 inoremap jk <Esc>
 noremap L $
 noremap H ^
-noremap <C-j> o<Esc>
-noremap <C-k> O<Esc>
+noremap J o<Esc>
+noremap K O<Esc>
 noremap t <C-r>
 " set clipboard=unnamed
 nmap <Leader>d diw
@@ -22,8 +22,10 @@ onoremap " i"
 onoremap { i{
 vnoremap p pgvy
 
-noremap <leader>j :vsc Window.NextDocumentWindow<CR>
-noremap <leader>k :vsc Window.PreviousDocumentWindow<CR>
+noremap gj gT
+noremap gk gt
+nnoremap <tab> i<tab><Esc>w
+nnoremap N J
 noremap <leader>s :vsc View.SolutionExplorer<CR>
 noremap <leader>o :vsc View.Output<CR>
 noremap <C-w> :vsc Window.CloseDocumentWindow<CR>
