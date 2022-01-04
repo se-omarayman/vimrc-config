@@ -39,5 +39,3 @@ noremap <leader>t :vsc View.Terminal<CR>
 " vnoremap y :vsc Edit.Copy<CR>
 " vnoremap d :vsc Edit.Cut<CR>
 noremap <leader>p "+p
-noremap <leader>d "+d
-noremap <leader>y "+y
