@@ -7,7 +7,7 @@ noremap H ^
 noremap J o<Esc>
 noremap K O<Esc>
 noremap t <C-r>
-" set clipboard=unnamed
+" set clipboard=unnamedplus
 nmap <Leader>d diw
 nmap <Leader>c ciw
 nmap <Leader>y yiw
@@ -20,6 +20,8 @@ onoremap H ^
 onoremap ( i(
 onoremap " i"
 onoremap { i{
+onoremap < i<
+onoremap ' i'
 vnoremap p pgvy
 
 noremap gj gT
@@ -32,3 +34,10 @@ noremap <C-w> :vsc Window.CloseDocumentWindow<CR>
 noremap gh :vsc Edit.QuickInfo<CR>
 noremap <leader>w :vsc File.SaveSelectedItems<CR>
 noremap <leader>t :vsc View.Terminal<CR>
+" nnoremap yy :vsc Edit.Copy<CR>
+" nnoremap dd :vsc Edit.Cut<CR>
+" vnoremap y :vsc Edit.Copy<CR>
+" vnoremap d :vsc Edit.Cut<CR>
+noremap <leader>p "+p
+noremap <leader>d "+d
+noremap <leader>y "+y
