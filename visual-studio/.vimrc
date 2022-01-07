@@ -33,9 +33,14 @@ noremap <leader>o :vsc View.Output<CR>
 noremap <C-w> :vsc Window.CloseDocumentWindow<CR>
 noremap gh :vsc Edit.QuickInfo<CR>
 noremap <leader>w :vsc File.SaveSelectedItems<CR>
+noremap <leader>W :vsc File.SaveAll<CR>
 noremap <leader>t :vsc View.Terminal<CR>
 " nnoremap yy :vsc Edit.Copy<CR>
 " nnoremap dd :vsc Edit.Cut<CR>
 " vnoremap y :vsc Edit.Copy<CR>
 " vnoremap d :vsc Edit.Cut<CR>
 noremap <leader>p "+p
+noremap <leader>y "+y
+noremap <leader>d "+d
+noremap <leader>nc :vsc Project.AddClass<CR>
+noremap <leader>nf :vsc Project.NewFolder<CR>
