@@ -21,7 +21,18 @@ onoremap { i{
 onoremap < i<
 onoremap ' i'
 vnoremap p pgvy
+nnoremap U J
 
-noremap gj gT
-noremap gk gt
-nnoremap N J
+function! s:switchEditor(...) abort
+    let count = a:1
+    let direction = a:2
+    for i in range(1, count ? count : 1)
+        call VSCodeCall(direction ==# 'next' ? 'workbench.action.nextEditorInGroup' : 'workbench.action.previousEditorInGroup')
+    endfor
+endfunction
+
+noremap gj <Cmd>call <SID>switchEditor(v:count, 'previous')<CR>
+noremap gk <Cmd>call <SID>switchEditor(v:count, 'next')<CR>
+
+noremap <leader>w <Cmd>call VSCodeNotify('workbench.action.files.save')<CR>
+noremap <leader>W <Cmd>call VSCodeNotify('workbench.action.files.saveAll')<CR>
