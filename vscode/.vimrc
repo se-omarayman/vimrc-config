@@ -1,6 +1,6 @@
-nnoremap <SPACE> <Nop>
+" nnoremap <SPACE> <Nop>
 let mapleader=" "
-" set visualbell
+set visualbell
 set ignorecase
 set smartcase
 set relativenumber
@@ -37,13 +37,6 @@ noremap <leader>n :noh<CR>
 noremap <leader>sf vaBo0
 noremap J gT
 noremap K gt
-
-
-
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 set hlsearch
 nnoremap <esc> :noh<CR>
